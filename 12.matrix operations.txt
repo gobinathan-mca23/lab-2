@@ -1,0 +1,39 @@
+% Create a 2x2 matrix
+A = [4, 2; 1, 3];
+
+% Scalar multiplication
+scalar = 2; 
+B = scalar * A; 
+disp('Scalar Multiplication (2 * A):'); 
+disp(B); 
+
+% Transpose of the matrix
+A_transpose = A'; 
+disp('Transpose of A:'); 
+disp(A_transpose); 
+
+% Inverse of the matrix
+A_inverse = inv(A); 
+disp('Inverse of A:'); 
+disp(A_inverse); 
+
+% Determinant of the matrix
+det_A = det(A); 
+disp('Determinant of A:'); 
+disp(det_A); 
+
+% Eigenvalues and eigenvectors
+[eig_vectors, eig_values] = eig(A); 
+disp('Eigenvalues of A:'); 
+disp(diag(eig_values)); 
+disp('Eigenvectors of A:'); 
+disp(eig_vectors); 
+
+% Singular Value Decomposition
+[U, S, V] = svd(A); 
+disp('U matrix from SVD:'); 
+disp(U); 
+disp('S matrix from SVD:'); 
+disp(S); 
+disp('V matrix from SVD:'); 
+disp(V);

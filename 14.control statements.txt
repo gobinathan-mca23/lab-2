@@ -1,0 +1,17 @@
+number  = input('Enter a number:');
+if number > 0
+      disp('The number is positive.');
+elseif number < 0
+      disp('The number is negative.');
+end
+...............
+n = input('Enter a positive integer: ');
+sum = 0;
+if n < 1
+    disp('Please enter a positive integer.');
+else
+        for i = 1:n
+        sum = sum + i;
+    end
+     fprintf('The sum of the first %d natural numbers             is  %d.\n', n, sum);
+end

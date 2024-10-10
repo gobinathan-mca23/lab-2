@@ -1,0 +1,18 @@
+% Sample data
+data = [12, 7, 3, 7, 5, 9, 10, 14, 6, 8];
+
+% Calculate mean
+mean_value = mean(data);
+fprintf('Mean: %f\n', mean_value);
+
+% Calculate median
+median_value = median(data);
+fprintf('Median: %f\n', median_value);
+
+% Calculate mode
+mode_value = mode(data);
+fprintf('Mode: %f\n', mode_value);
+
+% Calculate standard deviation
+std_dev = std(data);
+fprintf('Standard Deviation: %f\n', std_dev);

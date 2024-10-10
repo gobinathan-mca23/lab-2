@@ -1,0 +1,35 @@
+% Simple Vector Functions Demonstration in Octave
+
+% Define a sample vector
+vec = [1, 2, 3, 4, 5];
+
+% Calculate and display results for each function
+fprintf('Vector: ');
+disp(vec);
+
+% Calculate the cumulative sum of the vector
+cumulative_sum = cumsum(vec);
+fprintf('Cumulative Sum: ');
+disp(cumulative_sum);
+
+% Calculate the product of the vector
+total_prod = prod(vec);
+fprintf('Product: %d\n', total_prod);
+
+% Calculate the cumulative product of the vector
+cumulative_prod = cumprod(vec);
+fprintf('Cumulative Product: ');
+disp(cumulative_prod);
+
+% Calculate the difference between consecutive elements
+differences = diff(vec);
+fprintf('Differences: ');
+disp(differences);
+
+% Calculate the mean of the vector
+mean_value = mean(vec);
+fprintf('Mean: %.2f\n', mean_value);
+
+% Calculate the standard deviation of the vector
+std_deviation = std(vec);
+fprintf('Standard Deviation: %.2f\n', std_deviation);

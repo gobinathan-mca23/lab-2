@@ -1,0 +1,42 @@
+import numpy as np
+def get_random_rows_and_column(array, num_rows, column_index):
+    # Check if the number of rows to select is valid
+    if num_rows > array.shape[0]:
+        raise ValueError("Number of rows to select is greater than the number of rows in the array.")
+    
+    # Generate random row indices
+    row_indices = np.random.choice(array.shape[0], num_rows, replace=False)
+    
+    # Select random rows
+    random_rows = array[row_indices, :]
+    
+    # Select the specified column from the random rows
+    selected_column = random_rows[column_index,:]
+    
+    return random_rows, selected_column
+
+# Example usage
+np.random.seed(42)  # For reproducibility
+
+# Create a 2D NumPy array
+array = np.array([
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12],
+    [13, 14, 15, 16],
+    [17, 18, 19, 20]
+])
+
+# Specify the number of rows and column index
+num_rows = 3
+column_index = 2
+
+# Get random rows and the selected column
+random_rows, selected_column = get_random_rows_and_column(array, num_rows, column_index)
+print("Original Array:\n",array)
+print("\nRandom Rows:")
+print(random_rows)
+
+print(f"\nSelected Column (Index {column_index}):")
+print(selected_column)
+

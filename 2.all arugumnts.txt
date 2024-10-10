@@ -1,0 +1,4 @@
+def student(name,age,grade):                                                                                         
+ arg_names=student.__code__.co_varnames[:student.__code__.co_argcount]             
+ print("Argument names:",arg_names)                                                                           
+student("Alice",15,"10th")                                                                                              

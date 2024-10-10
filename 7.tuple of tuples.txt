@@ -1,0 +1,10 @@
+tuple = [('Mon',10),('Tue',8),('Wed',8),('Thu',5)]
+print("Given tuple: ",tuple)
+if any('Tue' in i for i in tuple):
+   print("present")
+else :
+   print("Not present")
+if any(3 in i for i in tuple):
+   print("present")
+else :
+   print("Not present")

@@ -1,0 +1,7 @@
+class MyClass:
+ class_variable="This is a class variable"
+ def __init__(self):
+     self.instance_variable="This is an instance variable"
+print("Namespace of MyClass:")
+for item in MyClass.__dict__:
+    print(item)

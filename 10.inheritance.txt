@@ -1,0 +1,13 @@
+class a:  
+    def Addition(self,a,b):  
+        return a+b;  
+class b:  
+    def Multiplication(self,a,b):  
+        return a*b;  
+class Derived(a,b):  
+    def Divide(self,a,b):  
+        return a/b;  
+d = Derived()  
+print("Addition:",d.Addition(10,20))  
+print("Multiplication:",d.Multiplication(10,20))  
+print("Division:",d.Divide(10,20))  
